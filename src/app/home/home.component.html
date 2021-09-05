@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<div class="container">
+  <div class="intro">
+    <div class="intro-header">
+      <span class="intro-header-button-home"> <a href="home">Home</a></span>
+      <span class="intro-header-button-create"> <a href="create">Create</a></span>
+      <span class="intro-header-button-profile"> <a href="profile">Profile</a></span>
+      <span class="intro-header-button-logout"> <a (click)="logOut()">Log out</a></span>
+    </div>
+  </div>
+
+  <div class="slogan">
+    <span class="slogan-text">Trong khi sống là ko phải là để ngồi nhàn nhã bên đống lửa. Ta phải ra ngoài, đương đầu với giá lạnh. Cảm nhận sự yếu đuối của bản thân và mạo hiểm tính mạng của mình. VÌ SỐNG LÀ PHẢI THẾ, SỐNG LÀ PHẢI RA NGOÀI. [in the most authentic realistic survival challenge possible]</span>
+  </div>
+
+  <div class="posts-flex">
+    <div class="container-post" *ngFor="let post of posts | paginate: { itemsPerPage: 3, currentPage: p }">
+      <div class="post">
+        <div class="post-image">
+          <img alt="" [src]="post.imgURL">
+        </div>
+        <div class="post-title">
+          <span class="post-title-text">{{post.title}}</span>
+        </div>
+        <div class="post-content">
+          <p class="post-content-text">{{post.content}}</p>
+        </div>
+        <div class="post-info">
+          <div class="post-info-author"><span class="post-info-author-name">{{post.user.username}}</span></div>
+          <div class="post-info-time"><span class="post-info-time-show">{{post.dateTime}}</span></div>
+        </div>
+      </div>
+      <div class="read-more">
+        <div class="read-more-button">
+          <a href="read-more/{{post.id}}"><button class="read-more-button-text">Read more</button></a>
+        </div>
+      </div>
+      <hr>
+    </div>
+  </div>
+
+  <div class="pagination">
+    <pagination-controls (click)="scrollToTop()" (pageChange)="p = $event" class="pagination-button"></pagination-controls>
+  </div>
+
+</div>
+
+</body>
+</html>

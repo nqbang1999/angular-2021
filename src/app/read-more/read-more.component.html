@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="login-form-register">
+    <a href="/home" class="login-form-register-text"><i class="fa fa-arrow-circle-o-left"></i> </a>
+  </div>
+  <div class="profile-container">
+    <div class="profile-image">
+      <img class="profile-image-img" [src]="post.imgURL" alt="">
+    </div>
+    <div class="profile-info">
+      <div class="profile-info-name">
+        <span class="profile-info-name-text">{{post.title}}</span>
+      </div>
+      <div class="profile-info-desc">
+        <p class="profile-info-desc-text">{{post.content}}</p>
+      </div>
+      <div class="post-info">
+        <div class="post-info-author"><span class="post-info-author-name">{{post.user.username}}</span></div>
+        <div class="post-info-time"><span class="post-info-time-show">{{post.dateTime}}</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+

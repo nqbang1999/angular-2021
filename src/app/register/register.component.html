@@ -1,0 +1,150 @@
+<!--<!doctype html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+
+<!--  &lt;!&ndash;  <meta charset="utf-8">&ndash;&gt;-->
+<!--  &lt;!&ndash;  <title>bangquang11</title>&ndash;&gt;-->
+<!--  &lt;!&ndash;  <base href="/">&ndash;&gt;-->
+<!--  &lt;!&ndash;  <meta name="viewport" content="width=device-width, initial-scale=1">&ndash;&gt;-->
+<!--  &lt;!&ndash;  <link rel="icon" type="image/x-icon" href="favicon.ico">&ndash;&gt;-->
+
+<!--  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">-->
+<!--  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>-->
+<!--  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>-->
+<!--  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>-->
+
+<!--  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+
+<!--  <head>-->
+<!--    <style>-->
+<!--      * {-->
+<!--        padding: 0;-->
+<!--        margin: 0;-->
+<!--        box-sizing: border-box;-->
+<!--      }-->
+<!--      body {-->
+<!--        /*background: rgb(219, 226, 226);*/-->
+<!--      }-->
+<!--      .row {-->
+<!--        background: white;-->
+<!--        border-radius: 30px;-->
+<!--        box-shadow: 12px 12px 22px grey;-->
+<!--      }-->
+<!--      img {-->
+<!--        border-top-left-radius: 30px;-->
+<!--        border-bottom-left-radius: 30px;-->
+<!--      }-->
+<!--      .btn1 {-->
+<!--        border: none;-->
+<!--        outline: none;-->
+<!--        height: 50px;-->
+<!--        width: 100%;-->
+<!--        background-color: black;-->
+<!--        color: white;-->
+<!--        border-radius: 4px;-->
+<!--        font-weight: bold;-->
+<!--      }-->
+<!--      .btn1:hover {-->
+<!--        background: white;-->
+<!--        border: 1px solid;-->
+<!--        color: black;-->
+<!--      }-->
+<!--    </style>-->
+<!--  </head>-->
+<!--</head>-->
+<!--<body>-->
+<!--<section class="Form my-4 mx-5">-->
+<!--  <div class="container">-->
+<!--    <div class="row no-gutters">-->
+<!--      <div class="col-lg-5">-->
+<!--        <img src="https://th.bing.com/th/id/R.f96c97f06216830459668f8145e5a0b1?rik=ne5xPbvz5gPkhQ&pid=ImgRaw&r=0" class="img-fluid" alt="">-->
+<!--      </div>-->
+<!--      <div class="col-lg-7 px-5 pt-5">-->
+<!--        <h1 class="font-weight-bold py-3"></h1>-->
+<!--        <a href="/login">-->
+<!--          <i class="fa fa-arrow-circle-left" style="font-size: 2.5rem"></i>-->
+<!--        </a>-->
+<!--        <h4>Sign Up For New Account</h4>-->
+<!--        <form (ngSubmit)="onSubmit()">-->
+<!--          <div class="form-row">-->
+<!--            <div class="col-lg-7">-->
+<!--               <input type="text"  [(ngModel)]="usernameInput" placeholder="input username" name="username" class="form-control my-3 p-4">-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="form-row">-->
+<!--            <div class="col-lg-7">-->
+<!--              <input type="text" [(ngModel)]="emailInput" placeholder="input email" name="email" class="form-control my-3 p-4">-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="form-row">-->
+<!--            <div class="col-lg-7">-->
+<!--              <input type="password" [(ngModel)]="passwordInput" placeholder="input password" name="password" class="form-control my-3 p-4">-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="form-row">-->
+<!--            <div class="col-lg-7">-->
+<!--              <input type="password" [(ngModel)]="confirmedPasswordInput" placeholder="confirm password" name="password" class="form-control my-3 p-4">-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="form-row">-->
+<!--            <div class="col-lg-7">-->
+<!--              <button class="btn1 mt-3 mb-5">Register</button>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--&lt;!&ndash;          <a href="#">Forgot password</a>&ndash;&gt;-->
+<!--&lt;!&ndash;          <p>Don't have an account? <a href="#">Register here</a> </p>&ndash;&gt;-->
+<!--        </form>-->
+<!--      </div>-->
+<!--    </div>-->
+
+<!--  </div>-->
+
+<!--</section>-->
+
+<!--</body>-->
+
+<!--</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<form (ngSubmit)="onSubmit()">
+  <div class="container">
+    <div class="login">
+      <div class="login-img">
+        <img class="login-img-img" src="https://cdn.dribbble.com/users/2417352/screenshots/16310013/media/39ee42da9a1d7d62e9cbfab239322b51.png?compress=1&resize=1200x900" alt="Italian Trulli">
+      </div>
+      <div class="login-form">
+        <div class="login-form-register">
+          <a href="/login" class="login-form-register-text"><i class="fa fa-arrow-circle-o-left"></i> </a>
+        </div>
+        <h3 class="login-form-title">bangquang11</h3>
+        <h5 class="login-form-text">Left For Code</h5>
+        <div class="login-form-input">
+          <input type="text" [(ngModel)]="usernameInput" name="username" class="login-form-input-username" placeholder="Enter username"> <br/>
+        </div>
+        <div class="login-form-input">
+          <input type="text" [(ngModel)]="emailInput" name="email" class="login-form-input-username" placeholder="Enter email"> <br/>
+        </div>
+        <div class="login-form-input-2">
+          <input type="password" [(ngModel)]="passwordInput" name="password" class="login-form-input-password" placeholder="Password">
+        </div>
+        <div class="login-form-input-2">
+          <input type="password" [(ngModel)]="confirmedPasswordInput" name="re_password" class="login-form-input-password" placeholder="Confirm Password">
+        </div>
+
+        <div class="login-form-button">
+          <button class="login-form-button-signin">Register</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+</body>
+</html>

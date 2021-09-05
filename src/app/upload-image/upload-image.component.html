@@ -1,0 +1,25 @@
+<p>Click on the "Choose File" button to upload a file:</p>
+
+<!--<form>-->
+<!--  <input type="file" id="myFile" name="filename">-->
+<!--  <input type="submit" (click)="upload()">-->
+<!--</form>-->
+
+<div>
+<!--  <input class="file-upload-input" type='file'  multiple accept="image/*" (change)="onFileChange($event)" />-->
+  <input type="file" class="file-upload" (change)="onFileSelected($event)">
+  <img className="align-self-center" width= '50%' src="{{ImageUrl}}" />
+</div>
+<!--<input type="submit" (click)="upload()">-->
+<img className="align-self-center" width= '50%' src="{{TestImageUrl}}" />
+
+
+<div class="container row">
+  <div class="col-md-12">
+    <div *ngIf=retrievedImage>
+      <img [src]="retrievedImage">
+    </div>
+  </div>
+</div>
+
+

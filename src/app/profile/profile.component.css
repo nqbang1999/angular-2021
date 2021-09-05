@@ -1,0 +1,60 @@
+.container {
+  width: 50%;
+  padding-top: 7%;
+}
+.profile-container {
+  width: 100%;
+  border-radius: 13px;
+}
+.profile-image img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 13px;
+}
+.profile-info-name {
+  padding-top: 8%;
+  font-weight: bolder;
+  font-size: 122%;
+  text-align: center;
+}
+.profile-info-email {
+  padding-top: 5%;
+  text-align: center;
+}
+.profile-info-email-text {
+  /*width: 46%;*/
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  background-color: #fe6a68;
+  color: antiquewhite;
+  font-size: 12px;
+}
+
+.profile-info-desc {
+  padding-top: 5%;
+  text-align: center;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.profile-info-button {
+  padding-top: 5%;
+  text-align: center;
+}
+
+.profile-info-button-back {
+  width: 67%;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  background-color: black;
+  color: antiquewhite;
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 414px) {
+  .container {
+    width: 100%;
+  }
+}

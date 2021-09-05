@@ -1,0 +1,91 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--  <meta charset="UTF-8">-->
+<!--  <title>Title</title>-->
+<!--  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>-->
+<!--  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>-->
+<!--  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>-->
+
+<!--  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+
+<!--  <style>-->
+<!--    html {-->
+<!--      /*background-color: papayawhip;*/-->
+<!--      /*min-height: 50vh;*/-->
+<!--      /*min-width: 50vh;*/-->
+<!--      height: 100%;-->
+<!--    }-->
+<!--    body {-->
+<!--      min-height: 100%;-->
+<!--      max-width: 400px;-->
+<!--      margin: 0 auto;-->
+<!--    }-->
+<!--  </style>-->
+<!--</head>-->
+<!--<body>-->
+<!--  <div class="container">-->
+<!--    <div class="team-container">-->
+<!--      <a href="/home">-->
+<!--        <i class="fa fa-arrow-circle-left" style="font-size: 2.5rem"></i>-->
+<!--      </a>-->
+<!--      <div class="text">-->
+<!--        your profile-->
+<!--      </div>-->
+<!--      <div class="row">-->
+<!--        <div class="profile-card">-->
+<!--          <div class="profile-content">-->
+<!--            <div class="profile-image">-->
+<!--              <img src="https://www.tvovermind.com/wp-content/uploads/2019/02/edstafford-hero.jpg" alt="first user">-->
+<!--            </div>-->
+<!--            <div class="desc">-->
+<!--              <h2>{{username}}</h2>-->
+<!--              <p>{{username}} dep trai nhat the gioi. m kb thi m ngu</p>-->
+<!--              <h2>Email: {{email}}</h2>-->
+<!--            </div>-->
+<!--            <div class="btn-div">-->
+<!--              <a href="change-password"> <button class="btn"><i class="fa-fa-facebook"></i>change password</button> </a>-->
+<!--            </div>-->
+
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</body>-->
+<!--</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<div class="container">
+  <div class="profile-container">
+    <div class="profile-image">
+      <img class="profile-image-img" alt="" src="https://cdn.dribbble.com/users/1355613/screenshots/15252730/media/28f348daf9654c440f5dcf398d8e097a.jpg?compress=1&resize=1200x900">
+    </div>
+    <div class="profile-info">
+      <div class="profile-info-name">
+        <span class="profile-info-name-text">{{username}}</span>
+      </div>
+      <div class="profile-info-email">
+        <button class="profile-info-email-text">{{email}}</button>
+      </div>
+      <div class="profile-info-desc">
+        <span class="profile-info-desc-text">{{username}} dep trai nhat the gioi. m kb thi m ngu</span>
+      </div>
+      <div class="profile-info-button">
+        <button (click)="backToHome()" class="profile-info-button-back">Back</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+</html>

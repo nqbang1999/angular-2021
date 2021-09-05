@@ -1,0 +1,112 @@
+
+
+
+
+
+<!--  <!DOCTYPE html>-->
+<!--  <html lang="en">-->
+<!--  <head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Title</title>-->
+<!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">-->
+<!--    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>-->
+<!--    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>-->
+<!--    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>-->
+
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+<!--  </head>-->
+<!--  <body>-->
+<!--  <div class="content">-->
+<!--    <div class="container">-->
+<!--      <div class="row justify-content-center">-->
+<!--        <div class="col-md-10">-->
+<!--          <div class="row justify-content-center">-->
+<!--            <div class="col-md-6">-->
+<!--              &lt;!&ndash;              <a href="/home">&ndash;&gt;-->
+<!--              &lt;!&ndash;&lt;!&ndash;                <span class="glyphicon glyphicon-triangle-left"></span>&ndash;&gt;&ndash;&gt;-->
+<!--              &lt;!&ndash;                <i class="glyphicon glyphicon-arrow-left" style="font-size: xx-large; color: lightslategray; "></i>&ndash;&gt;-->
+<!--              &lt;!&ndash;              </a>&ndash;&gt;-->
+<!--              <a href="/home">-->
+<!--                <i class="fa fa-arrow-circle-left" style="font-size: 2.5rem"></i>-->
+<!--              </a>-->
+<!--              <h3 class="heading mb-4">in the most authentic realistic survival challenge</h3>-->
+<!--              <p>i've put myself through extreme tests of endurance and isolation to become a survival expert</p>-->
+<!--              <p><img src="https://th.bing.com/th/id/R.e02a2f8b7cea74b531dab0b72f36e5c1?rik=ICToYNRf%2bk5Z5A&pid=ImgRaw&r=0" alt="Image" class="img-fluid"></p>-->
+<!--            </div>-->
+
+
+<!--            <div class="col-md-6">-->
+<!--              <form (ngSubmit)="onSubmit()" class="mb-5" method="post" id="contactForm" name="contactForm">-->
+<!--                <div class="row">-->
+<!--                  <div class="col-md-12 form-group">-->
+<!--                    <input type="text" class="form-control" [(ngModel)]="title" name="name" id="name" placeholder="enter your title">-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--                <div class="row">-->
+<!--                  <div class="col-md-12 form-group">-->
+<!--                    <textarea class="form-control" [(ngModel)]="content" name="message" id="message" rows="5" cols="55" placeholder="enter your content..."></textarea>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--                <div class="row">-->
+<!--                  <div class="col-md-12 form-group">-->
+<!--                    <input type="file" class="file-upload" (change)="onFileSelected($event)">-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--                <div class="row">-->
+<!--                  <div class="col-12">-->
+<!--                    <input style="margin-left: 0px" type="submit" value="submit" class="btn btn-primary rounded-0 py-2 px-4">-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </form>-->
+<!--              <div id="form-message-warning mt-4"></div>-->
+<!--              <div id="form-message-success">-->
+<!--                Your message was sent, thank you!-->
+<!--              </div>-->
+<!--            </div>-->
+
+
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--  </body>-->
+<!--  </html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+</head>
+<body>
+
+<form>
+  <div class="container">
+    <div class="container-post">
+      <div class="post">
+        <div class="intro">
+          <span class="intro-title">bangquang11</span>
+        </div>
+        <div class="post-title">
+          <textarea [(ngModel)]="title" name="title" class="post-title-text" placeholder="Title"></textarea>
+        </div>
+        <div class="post-content">
+          <textarea [(ngModel)]="content" name="content" style="height: 200px" class="post-content-text" placeholder="Content"></textarea>
+        </div>
+        <div class="post-upload">
+          <input type="file" class="post-upload-input" (change)="onFileSelected($event)">
+        </div>
+        <div class="post-button">
+          <button (click)="backToHome()" class="post-button-cancel">Cancel</button>
+          <button (click)="onSubmit()" class="post-button-create">Create</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+
+
+</body>
+</html>

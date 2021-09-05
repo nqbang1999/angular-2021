@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<section id="latest-news-block">
+  <div class="bangquang-title">
+     <h3 style="text-align: center">marooned with bangquang11</h3>
+  </div>
+  <div class="container">
+    <a href="/home">
+      <i class="fa fa-arrow-circle-left" style="font-size: 1.5rem; font-style: normal; color: slateblue"></i>
+    </a>
+    <div class="row">
+
+<!--      <div class="row">-->
+      <!--section-title-->
+<!--      <div class="section-title text-center wow fadeInUp">-->
+<!--        <h2>Latest news</h2>-->
+<!--        <a href="blog.html">See the blog</a></div>-->
+      <!--/section-title-->
+
+<!--      /*-->
+<!--      * home article-->
+<!--      */-->
+      <article class="col-md-3 col-sm-6 col-xs-12"  *ngFor="let post of posts">
+        <header class="entry-header"> <a href="blog-post.html"><img [src]="post.imgURL" alt="image 1"></a>
+          <a href="blog-post.html"><h6>{{post.title}}</h6></a>
+          <a href="#">{{post.user.username}}</a> </header>
+      </article>
+
+<!--      <article class="col-md-3 col-sm-6 col-xs-12">-->
+<!--        <header class="entry-header"> <a href="blog-post.html"><img src="img/04-screenshot.jpg" alt="image 1"></a>-->
+<!--          <a href="blog-post.html"><h6>10 Incredible Quotes To Guide Your Life</h6></a>-->
+<!--          <a href="#">Web-design</a> , <a href="#">Front-end</a> </header>-->
+<!--      </article>-->
+<!--      &lt;!&ndash;/home article &ndash;&gt;-->
+
+<!--      &lt;!&ndash;home article&ndash;&gt;-->
+<!--      <article class="col-md-3 col-sm-6 col-xs-12">-->
+<!--        <header class="entry-header"> <img src="https://th.bing.com/th/id/R.7c8315d744081172c11fcc9a4b811172?rik=v5LZL7Ykb1VuEQ&riu=http%3a%2f%2fimg.xcitefun.net%2fusers%2f2015%2f01%2f371695%2cxcitefun-cute-animals-pictures-41.jpg&ehk=78YcBfnsbzvfhMKHc9VdTxBvS3ozVdfb%2b8dCCzO4uRE%3d&risl=&pid=ImgRaw&r=0" alt="image 1"> <a href="#">-->
+<!--          <h6>Responsive Website in 2017 –-->
+<!--            Step by Step Guide</h6>-->
+<!--        </a> <a href="#">Web-design</a> </header>-->
+<!--      </article>-->
+<!--      &lt;!&ndash;/home article &ndash;&gt;-->
+
+<!--      &lt;!&ndash;home article&ndash;&gt;-->
+<!--      <article class="col-md-3 col-sm-6 col-xs-12">-->
+<!--        <header class="entry-header"> <img src="https://th.bing.com/th/id/OIP.-00sl2wdGNdsHB4dSY5pRQHaEo?pid=ImgDet&rs=1" alt="image 1"> <a href="#">-->
+<!--          <h6>10 Incredible Quotes To Guide Your Life</h6>-->
+<!--        </a> <a href="#">Web-design</a> , <a href="#">Front-end</a> </header>-->
+<!--      </article>-->
+<!--      &lt;!&ndash;/home article &ndash;&gt;-->
+
+<!--      &lt;!&ndash;home article&ndash;&gt;-->
+<!--      <article class="col-md-3 col-sm-6 col-xs-12">-->
+<!--        <header class="entry-header"> <img src="https://th.bing.com/th/id/OIP.-00sl2wdGNdsHB4dSY5pRQHaEo?pid=ImgDet&rs=1" alt="image 1"> <a href="#">-->
+<!--          <h6>HEADING 6 in use here</h6>-->
+<!--        </a> <a href="#">Web-design</a> </header>-->
+<!--      </article>-->
+      <!--/home article -->
+
+    </div>
+  </div>
+</section>
+</html>
